@@ -117,25 +117,44 @@
                     <div>
                         <h3 id="tp_form" class="text-2xl font-serif font-semibold text-law-dark mb-8">Στείλτε μας ένα μήνυμα</h3>
                         <div>
-                            <form action="https://formsubmit.co/eu.apostolaki@gmail.com" method="POST" class="space-y-8">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    <div class="relative"><input id="name" type="text" required=""
-                                            class="w-full bg-transparent border-0 border-b-2 border-law-gray/30 focus:border-law-gold outline-none py-3 text-law-dark placeholder-law-gray/60 transition-colors"
-                                            placeholder="Όνομα *" name="name" value="" /></div>
-                                    <div class="relative"><input id="email" type="email" required=""
-                                            class="w-full bg-transparent border-0 border-b-2 border-law-gray/30 focus:border-law-gold outline-none py-3 text-law-dark placeholder-law-gray/60 transition-colors"
-                                            placeholder="Email *" name="email" value="" /></div>
-                                </div>
-                                <div class="relative"><input id="phone" type="tel"
-                                        class="w-full bg-transparent border-0 border-b-2 border-law-gray/30 focus:border-law-gold outline-none py-3 text-law-dark placeholder-law-gray/60 transition-colors"
-                                        placeholder="Τηλέφωνο" name="phone" value="" /></div>
-                                <div class="relative"><textarea id="message" name="message" required="" rows="4"
-                                        class="w-full bg-transparent border-0 border-b-2 border-law-gray/30 focus:border-law-gold outline-none py-3 text-law-dark placeholder-law-gray/60 transition-colors resize-none"
-                                        placeholder="Περιγράψτε το θέμα σας... *"></textarea></div>
-                                <div class="text-center pt-4"><button data-slot="button"
-                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs h-9 has-[&gt;svg]:px-3 bg-law-dark hover:bg-law-gray text-white font-medium px-12 py-3 transition-colors"
-                                        type="submit">Αποστολή Μηνύματος</button></div>
-                            </form>
+                            <form action="https://formsubmit.co/YOUR_GENERATED_ENDPOINT" method="POST" class="space-y-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="relative">
+      <input id="name" type="text" name="name" required
+        placeholder="Όνομα *"
+        class="w-full bg-transparent border-0 border-b-2 border-law-gray/30 focus:border-law-gold outline-none py-3 text-law-dark placeholder-law-gray/60 transition-colors" />
+    </div>
+    <div class="relative">
+      <input id="email" type="email" name="email" required
+        placeholder="Email *"
+        class="w-full bg-transparent border-0 border-b-2 border-law-gray/30 focus:border-law-gold outline-none py-3 text-law-dark placeholder-law-gray/60 transition-colors" />
+    </div>
+  </div>
+
+  <div class="relative">
+    <input id="phone" type="tel" name="phone"
+      placeholder="Τηλέφωνο"
+      class="w-full bg-transparent border-0 border-b-2 border-law-gray/30 focus:border-law-gold outline-none py-3 text-law-dark placeholder-law-gray/60 transition-colors" />
+  </div>
+
+  <div class="relative">
+    <textarea id="message" name="message" required rows="4"
+      placeholder="Περιγράψτε το θέμα σας... *"
+      class="w-full bg-transparent border-0 border-b-2 border-law-gray/30 focus:border-law-gold outline-none py-3 text-law-dark placeholder-law-gray/60 transition-colors resize-none"></textarea>
+  </div>
+
+  <!-- Hidden fields for config -->
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html"> 
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Νέο μήνυμα από την ιστοσελίδα">
+
+  <div class="text-center pt-4">
+    <button type="submit"
+      class="inline-flex items-center justify-center gap-2 rounded-md bg-law-dark hover:bg-law-gray text-white font-medium px-12 py-3 transition-colors">
+      Αποστολή Μηνύματος
+    </button>
+  </div>
+</form>
                         </div>
                     </div>
                 </div>
